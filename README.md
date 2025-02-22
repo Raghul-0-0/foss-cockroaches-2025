@@ -67,19 +67,13 @@ print(response.json()["prompt"])
 
 5. API Reference:
 
-   Endpoint
+   Endpoint - /get_prompt
 
-   Method
+   GET - Method
+   
+   Description - Fetces the generated prompt
 
-   Description
-
-   /get_prompt
-
-   GET
-
-   Fetches the generated prompt
-
-6. Tools Used:
+7. Tools Used:
 
    FastAPI: For creating the backend API
 
@@ -89,7 +83,7 @@ print(response.json()["prompt"])
 
    Flux AI: The AI system interacting with the API
 
-7. Troubleshooting:
+8. Troubleshooting:
 
    If the API doesn’t start, check if FastAPI is installed.
 
