@@ -67,35 +67,35 @@ print(response.json()["prompt"])
 
 5. API Reference:
 
-Endpoint
+   Endpoint
 
-Method
+   Method
 
-Description
+   Description
 
-/get_prompt
+   /get_prompt
 
-GET
+   GET
 
-Fetches the generated prompt
+   Fetches the generated prompt
 
 6. Tools Used:
 
-FastAPI: For creating the backend API
+   FastAPI: For creating the backend API
 
-Uvicorn: ASGI server for running FastAPI
+   Uvicorn: ASGI server for running FastAPI
 
-Requests: For making HTTP requests
+   Requests: For making HTTP requests
 
-Flux AI: The AI system interacting with the API
+   Flux AI: The AI system interacting with the API
 
 7. Troubleshooting:
 
-If the API doesn’t start, check if FastAPI is installed.
+   If the API doesn’t start, check if FastAPI is installed.
 
-Ensure Flux AI can send requests to 127.0.0.1:8000.
+   Ensure Flux AI can send requests to 127.0.0.1:8000.
 
-If facing CORS issues, enable CORS in FastAPI:
+   If facing CORS issues, enable CORS in FastAPI:
 ```
 from fastapi.middleware.cors import CORSMiddleware
 app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_methods=["*"], allow_headers=["*"])
