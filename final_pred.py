@@ -333,8 +333,13 @@ class Application:
     
     def send_to_flux(self, text):
         self.payload = {
-            "prompt": "generate a funny meme based on " + text,  # Ensure "prompt" is spelled correctly
-            "steps": 5
+            "prompt": "generate a funny meme based on "+text,  # Ensure "prompt" is spelled correctly
+            "steps": 5,
+            "width":512,
+            "height":512,
+            "batch_size":1,
+            "sampler_name":"Euler",
+            "scheduler":"Simple"
             # Include other necessary parameters like width, height, etc., if required
         }
         try:
