@@ -26,7 +26,7 @@ Basic understanding of APIs
 
 Install dependencies:
 
-``` python pip install fastapi uvicorn requests```
+```  pip install fastapi uvicorn requests```
 
 Create an API file (api.py) and add the following code:
 
@@ -59,7 +59,7 @@ fetch("http://127.0.0.1:8000/get_prompt")
 ```
 
 If Flux AI supports Python:
-```
+``` python
 import requests
 response = requests.get("http://127.0.0.1:8000/get_prompt")
 print(response.json()["prompt"])
@@ -90,7 +90,7 @@ print(response.json()["prompt"])
    Ensure Flux AI can send requests to 127.0.0.1:8000.
 
    If facing CORS issues, enable CORS in FastAPI:
-```
+``` python
 from fastapi.middleware.cors import CORSMiddleware
 app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_methods=["*"], allow_headers=["*"])
 ```
