@@ -1,10 +1,10 @@
-**Flux AI to Python API Integration
-**
-1. Introduction:
+#Flux AI to Python API Integration
+
+##1. Introduction:
 
 This project allows Flux AI to communicate with a Python FastAPI server, enabling dynamic prompt retrieval for AI processing.
 
-2. Features:
+##2. Features:
    
 Fetches a dynamic prompt from a Python API
 
@@ -12,7 +12,7 @@ Runs a local FastAPI server to serve the prompt
 
 Can be integrated with Flux AI workflows
 
-3. Prerequisites:
+##3. Prerequisites:
 
 Python 3.8+
 
@@ -20,9 +20,9 @@ Flux AI installed and running locally
 
 Basic understanding of APIs
 
-4. Installation:
+##4. Installation:
 
-4.1 Setting Up Python API
+###4.1 Setting Up Python API
 
 Install dependencies:
 
@@ -48,7 +48,7 @@ Run the API:
 
 ```python api.py```
 
-4.2 Making Requests from Flux AI
+###4.2 Making Requests from Flux AI
 
 If Flux AI supports JavaScript, use:
 ```
@@ -65,7 +65,7 @@ response = requests.get("http://127.0.0.1:8000/get_prompt")
 print(response.json()["prompt"])
 ```
 
-5. API Reference:
+##5. API Reference:
 
    Endpoint - /get_prompt
 
@@ -73,7 +73,7 @@ print(response.json()["prompt"])
    
    Description - Fetces the generated prompt
 
-7. Tools Used:
+##7. Tools Used:
 
    FastAPI: For creating the backend API
 
@@ -83,7 +83,7 @@ print(response.json()["prompt"])
 
    Flux AI: The AI system interacting with the API
 
-8. Troubleshooting:
+##8. Troubleshooting:
 
    If the API doesn’t start, check if FastAPI is installed.
 
