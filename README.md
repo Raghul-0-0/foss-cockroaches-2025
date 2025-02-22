@@ -30,6 +30,7 @@ pip install fastapi uvicorn requests
 
 Create an API file (api.py) and add the following code:
 
+``` python
 from fastapi import FastAPI
 import uvicorn
 
@@ -41,6 +42,7 @@ async def get_prompt():
 
 if __name__ == "__main__":
     uvicorn.run(app, host="127.0.0.1", port=8000)
+```
 
 Run the API:
 
