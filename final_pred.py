@@ -333,15 +333,15 @@ class Application:
     
     def send_to_flux(self, text):
         self.payload = {
-            "prompt": "generate a funny meme based on "+text,  # Ensure "prompt" is spelled correctly
-            "steps": 5,
-            "width":512,
-            "height":512,
+            "prompt": "generate a funny meme based on "+text,  
+            "steps": 20,
+            "width":400,
+            "height":400,
             "batch_size":1,
             "sampler_name":"Euler",
             "scheduler":"Simple"
-            # Include other necessary parameters like width, height, etc., if required
         }
+        
         try:
             self.response = requests.post(url='http://127.0.0.1:7860/sdapi/v1/txt2img', json=self.payload)
             self.response.raise_for_status()  # Raises an HTTPError for bad responses
